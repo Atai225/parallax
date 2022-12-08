@@ -34,7 +34,7 @@ body {
     position: absolute;
     z-index: 100;
     width: 100%;
-    height: calc(var(--index) * 10);
+    height: calc(var(--index) * 8);
     background-image: url('../img/ground.png');
     background-size: cover;
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body {
 
 .layer{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -77,18 +77,18 @@ body {
 
 }
 .layers__middle{
-    transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-    -webkit-transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-    -moz-transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-    -ms-transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-    -o-transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 2.4), 0);
+    -webkit-transform: translate3d(0, calc(var(--scrollTop) / 2.4), 0);
+    -moz-transform: translate3d(0, calc(var(--scrollTop) / 2.4), 0);
+    -ms-transform: translate3d(0, calc(var(--scrollTop) / 2.4), 0);
+    -o-transform: translate3d(0, calc(var(--scrollTop) / 2.4), 0);
 }
 .layers__front {
-    transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
-    -webkit-transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
-    -moz-transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
-    -ms-transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
-    -o-transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 5.8), 0);
+    -webkit-transform: translate3d(0, calc(var(--scrollTop) / 5.8), 0);
+    -moz-transform: translate3d(0, calc(var(--scrollTop) / 5.8), 0);
+    -ms-transform: translate3d(0, calc(var(--scrollTop) / 5.8), 0);
+    -o-transform: translate3d(0, calc(var(--scrollTop) / 5.8), 0);
 }
 
 .main-article {
@@ -117,7 +117,7 @@ body {
     will-change: transform;
     text-transform: uppercase;
     font-weight: 900;
-    text-shadow: 0 0 15px #9d822b;
+    text-shadow: 0 0 15px #932817;
     color: var(--text);
     transition: var(--transition);
     margin-top: calc(var(--index) * -1.75);
@@ -134,6 +134,8 @@ body {
 
 
 .main-article__header {
+    text-shadow: 0 0 15px #932817;
+
     text-transform: uppercase;
     font-size: calc(var(--index) * 1.8);
     letter-spacing: calc(var(--index) / 7.5);
@@ -148,6 +150,8 @@ body {
 }
 
 .main-article__paragraph{
+    text-shadow: 0 0 15px #932817;
+
     max-width: calc(var(--index) * 30);
     font-size: calc(var(--index) * .9);
     margin-top: calc(var(--index) / 1.25);
